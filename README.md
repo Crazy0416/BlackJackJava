@@ -30,5 +30,5 @@
 
 ## 블랙잭 메서드 정리
 
-[블랙잭 메서드 정리 md](https://github.com/Crazy0416/BlackJackJava/blob/master/resources/%EB%B8%94%EB%9E%99%EC%A0%9D%20%EB%A9%94%EC%84%9C%EB%93%9C%20%EC%A0%95%EB%A6%AC.md)
+[블랙잭 메서드 정리 md](https://github.com/Crazy0416/BlackJackJava/blob/master/resources/%EB%B8%94%EB%9E%99%EC%9E%AD%20%EB%A9%94%EC%84%9C%EB%93%9C%20%EC%A0%95%EB%A6%AC.md)
 
