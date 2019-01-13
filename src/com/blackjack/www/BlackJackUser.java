@@ -18,10 +18,6 @@ public abstract class BlackJackUser extends User implements SetManager{
     public void drawCard() {
         Card card = roomCardDeck.drawCard();
         cardList.add(card);
-        if(this.getScore() > 21) {
-            System.out.println(this + " 유저가 죽었습니다.");
-            this.setState(2);
-        }
     }
 
     public int getScore() {

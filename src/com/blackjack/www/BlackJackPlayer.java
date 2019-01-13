@@ -34,6 +34,10 @@ public class BlackJackPlayer extends BlackJackUser{
         switch(choice) {
             case 1:
                 this.drawCard();
+                if(this.getScore() > 21) {
+                    System.out.println(this + ": 21을 초과하여 죽었습니다.");
+                    this.setState(2);
+                }
                 break;
             case 2:
                 System.out.println(this + ": 게임을 스톱합니다.");

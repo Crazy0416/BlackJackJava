@@ -12,6 +12,10 @@ public class BlackJackDealer extends BlackJackUser{
         if(this.getScore() <= 16) {
             this.drawCard();
             System.out.println(this.toString() + ": 딜러는 카드를 드로우 했습니다.");
+            if(this.getScore() > 21) {
+                System.out.println(this + ": 21을 초과하여 죽었습니다.");
+                this.setState(2);
+            }
         } else if(this.getScore() < 21) {
             System.out.println(this.toString() + ": 딜러는 스톱했습니다.");
             this.setState(1);
