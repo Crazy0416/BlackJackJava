@@ -26,6 +26,7 @@ public class Rule {
 
         Iterator iter = orderList.iterator();
         int Max_result = 0;
+        int allDie = 0;
         BlackJackUser winner = orderList.getFirst();
         BlackJackUser user = null;
 
@@ -35,14 +36,19 @@ public class Rule {
 
             System.out.println(user + "의 상태: " + user.getState() + " 점수: " + result);
 
-            if(user.getState() == 2)
+            if(user.getState() == 2) {
+                allDie++;
                 continue;
+            }
 
             if((user instanceof BlackJackDealer)? Max_result <= result : Max_result < result) {
                 winner = user;
                 Max_result = result;
             }
         }
+
+        if(allDie == orderList.size())
+            winner = null;
 
         return winner;
     }
