@@ -90,7 +90,11 @@ public class Rule {
 
             if(allDieCnt == orderList.size()) {
                 BlackJackUser winner = this.getWinner();
-                System.out.println("세트 승자 " + winner.toString());
+                if(winner == null) {
+                    System.out.println("모두 죽었기 때문에 승자는 없습니다.");
+                } else {
+                    System.out.println("세트 승자 " + winner.toString());
+                }
 
                 System.out.println("세트 종료");
                 break;
