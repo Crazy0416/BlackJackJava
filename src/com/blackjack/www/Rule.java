@@ -38,7 +38,7 @@ public class Rule {
             if(user.getState() == 2)
                 continue;
 
-            if(Max_result <= result) {
+            if((user instanceof BlackJackDealer)? Max_result <= result : Max_result < result) {
                 winner = user;
                 Max_result = result;
             }
