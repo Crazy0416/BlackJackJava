@@ -1,5 +1,6 @@
 package com.blackjack.www;
 
+import java.util.Iterator;
 import java.util.Scanner;
 
 public class BlackJackPlayer extends BlackJackUser{
@@ -8,6 +9,15 @@ public class BlackJackPlayer extends BlackJackUser{
         super(name, uid);
     }
 
+    public void showMyCardList() {
+        Iterator iter = this.cardList.iterator();
+
+        System.out.println("보유한 카드 리스트:");
+        while(iter.hasNext()) {
+            Card card = (Card) iter.next();
+            System.out.println(" || Card : "  + card.getNUMBER() + " || ");
+        }
+    }
 
     @Override
     public void myTurn() {
@@ -17,6 +27,7 @@ public class BlackJackPlayer extends BlackJackUser{
         System.out.println("1. 카드 드로우");
         System.out.println("2. 스톱");
         System.out.println("3. 다이");
+        showMyCardList();
         System.out.println("현재 내 점수: " + this.getScore());
         int choice = 0;
 
