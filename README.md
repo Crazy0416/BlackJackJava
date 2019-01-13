@@ -2,7 +2,12 @@
 
 생 자바 코드로 블랙잭 만들어 보기
 
+## 의존성
+- java 1.8 버전
 
+## 설치 및 실행
+- wget https://github.com/Crazy0416/BlackJackJava/releases/download/1.0/BlackJackGame.jar
+- java -jar BlackJackGame.jar
 
 ## 블랙잭 룰
 
@@ -16,6 +21,9 @@
 - 딜러와 유저가 동점이라면 딜러가 이기도록 한다.
 - 단 21을 초과하면 초과한 쪽이 진다.
 
+
+## 클래스간 관계
+![클래스 관계도](https://raw.githubusercontent.com/Crazy0416/BlackJackJava/master/resources/BlackJack.png)
 
 
 ## 사용되는 클래스
