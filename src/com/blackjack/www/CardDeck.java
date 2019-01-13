@@ -34,14 +34,14 @@ public class CardDeck {
     // TODO: toString 메서드 완료하기.
     @Override
     public String toString() {
-        StringBuilder str = new StringBuilder();
+        String str = this + " CardList: ";
         Iterator iter = deckList.iterator();
 
         while(iter.hasNext()) {
             Card card = (Card) iter.next();
-
+            str += card.toString();
         }
 
-        return "";
+        return str;
     }
 }
