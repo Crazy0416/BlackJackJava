@@ -13,8 +13,8 @@ public class Rule {
         orderList = new LinkedList<>();
     }
 
-    public void setUserOrder(LinkedList<BlackJackUser> orderList) {
-        this.orderList = orderList;
+    public void setUserOrder(LinkedList<BlackJackUser> userList) {
+        this.orderList = userList;
         Collections.shuffle(this.orderList);
     }
 
